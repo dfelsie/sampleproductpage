@@ -1,0 +1,9 @@
+#simpleHeroSec{
+    height: 700px;
+    justify-content: space-between;
+    width: 100%;
+    background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(0,72,124,1) 66%, rgb(0, 179, 255) 100%); 
+color: white;
+padding-left: 5%;
+padding-right: 5%;
+}

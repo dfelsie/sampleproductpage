@@ -1,0 +1,27 @@
+
+
+.prodHead>span{
+
+    color: purple;
+}
+.prodHead{
+    font-family: 'Ubuntu','monospace';
+    font-weight: 900;
+    font-size: 3rem;
+}
+
+.bodyText{
+    font-family: 'Inter','monospace';
+    font-weight: 500;
+    font-size: 1.25rem;
+}
+
+button.sectionButton{
+    border-radius: 5px;
+    height: 50px;
+    width: 150px;
+    background-color: whitesmoke;
+    color: purple;
+    font-family: 'Inter','monospace';
+
+}
