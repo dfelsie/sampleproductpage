@@ -29,7 +29,8 @@ const Index = () => (
     <CardGridSec />
     <AttributeGridSec />
     <ClickableLinkSec />
-    <SponsorRowSec />
+    {/*     <SponsorRowSec />
+     */}{" "}
     <Footer></Footer>
   </Flex>
 );

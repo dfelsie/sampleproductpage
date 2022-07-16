@@ -11,13 +11,11 @@ import {
 } from "@chakra-ui/react";
 
 type Props = {};
+import sharedStyles from "../Shared.module.css";
 export default function ClickableLinkSec({}: Props) {
   return (
-    <Flex>
-      <Flex flexDir={"column"}>
-        <h4>Here's some pretty cool links!</h4>
-        <Box>Grid of links with Images</Box>
-      </Flex>
+    <Flex flexDir={"column"} className={sharedStyles.basicSec}>
+      <h4 className={sharedStyles.smallTopText}>Small Top Message</h4>
     </Flex>
   );
 }

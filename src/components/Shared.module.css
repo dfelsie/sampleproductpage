@@ -1,27 +1,63 @@
-
-
-.prodHead>span{
-
-    color: purple;
+.prodHead > span {
+  color: purple;
 }
-.prodHead{
-    font-family: 'Ubuntu','monospace';
-    font-weight: 900;
-    font-size: 3rem;
+.prodHead {
+  font-family: "Ubuntu", "monospace";
+  font-weight: 900;
+  font-size: 3rem;
 }
 
-.bodyText{
-    font-family: 'Inter','monospace';
-    font-weight: 500;
-    font-size: 1.25rem;
+.bodyText {
+  font-family: "Inter", "monospace";
+  font-weight: 500;
+  font-size: 1.25rem;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
-button.sectionButton{
-    border-radius: 5px;
-    height: 50px;
-    width: 150px;
-    background-color: whitesmoke;
-    color: purple;
-    font-family: 'Inter','monospace';
+button.sectionButton {
+  border-radius: 5px;
+  height: 50px;
+  width: 150px;
+  background-color: whitesmoke;
+  color: purple;
+  font-family: "Inter", "monospace";
+}
 
+div.basicSec {
+  justify-content: space-between;
+  width: 100%;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.basicSec > * {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.smallTopText {
+  text-transform: uppercase;
+  font-size: 0.875rem;
+  font-weight: 700;
+  font-family: "Inter", "monospace";
+}
+
+.medMidText {
+  font-size: 2.25rem;
+  font-weight: 700;
+  font-family: "Ubuntu", "monospace";
+}
+
+.prodBodyText {
+  font-size: 1.25rem;
+  font-weight: 400;
+  font-family: "Inter", "monospace";
+}
+
+button.secButton {
+  border-radius: 0.5rem;
+  height: 50px;
+  width: 120px;
+  font-family: "Inter", "monospace";
 }

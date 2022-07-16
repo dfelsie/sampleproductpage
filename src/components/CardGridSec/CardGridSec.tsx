@@ -11,14 +11,17 @@ import {
 } from "@chakra-ui/react";
 
 type Props = {};
+import sharedStyles from "../Shared.module.css";
 export default function CardGridSec({}: Props) {
   return (
-    <Flex w={"100%"} justifyContent={"space-between"}>
+    <Flex className={sharedStyles.basicSec}>
       <Flex flexDir={"column"}>
-        <h4>Small Top Message</h4>
-        <h2>Product Statement</h2>
-        <h3>Describe the above statement. Isn't it great?</h3>
-        <Button>Read More</Button>
+        <h4 className={sharedStyles.smallTopText}>Small Top Message</h4>
+        <h2 className={sharedStyles.medMidText}>Product Statement</h2>
+        <h3 className={sharedStyles.prodBodyText}>
+          Describe the above statement. Isn't it great?
+        </h3>
+        <Button className={sharedStyles.secButton}>Read More</Button>
       </Flex>
       <Box>Put a grid here</Box>
     </Flex>

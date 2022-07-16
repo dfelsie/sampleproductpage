@@ -15,8 +15,8 @@ import sharedStyles from "../Shared.module.css";
 type Props = {};
 export default function SimpleHero({}: Props) {
   return (
-    <Flex id={styles.simpleHeroSec}>
-      <Flex flexDir={"column"} h={"fit-content"} my={"auto"}>
+    <Flex id={styles.simpleHeroSec} className={sharedStyles.basicSec}>
+      <Flex flexDir={"column"} h={"fit-content"}>
         <h1 className={sharedStyles.prodHead}>
           <span>Our Great Product</span> <br /> Solves Your Problems
         </h1>
@@ -32,9 +32,7 @@ export default function SimpleHero({}: Props) {
           Try The Product!
         </Button>
       </Flex>
-      <Box h={"fit-content"} my={"auto"}>
-        Cool Image Here
-      </Box>
+      <Box h={"fit-content"}>Cool Image Here</Box>
     </Flex>
   );
 }
