@@ -6,6 +6,7 @@ import {
   ListIcon,
   ListItem,
   Flex,
+  Box,
 } from "@chakra-ui/react";
 import { CheckCircleIcon, LinkIcon } from "@chakra-ui/icons";
 
@@ -29,6 +30,7 @@ const Index = () => (
     <CardGridSec />
     <AttributeGridSec />
     <ClickableLinkSec />
+    <Box>Potential Carousel?</Box>
     {/*     <SponsorRowSec />
      */}{" "}
     <Footer></Footer>

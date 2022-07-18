@@ -12,9 +12,11 @@ import {
 
 type Props = {};
 import sharedStyles from "../Shared.module.css";
+import cardGridStyles from "./CardGrid.module.css";
+import CardGrid from "./CardGrid";
 export default function CardGridSec({}: Props) {
   return (
-    <Flex className={sharedStyles.basicSec}>
+    <Flex className={sharedStyles.basicSec + " " + cardGridStyles.cardGridSec}>
       <Flex flexDir={"column"}>
         <h4 className={sharedStyles.smallTopText}>Small Top Message</h4>
         <h2 className={sharedStyles.medMidText}>Product Statement</h2>
@@ -23,7 +25,7 @@ export default function CardGridSec({}: Props) {
         </h3>
         <Button className={sharedStyles.secButton}>Read More</Button>
       </Flex>
-      <Box>Put a grid here</Box>
+      <CardGrid />
     </Flex>
   );
 }

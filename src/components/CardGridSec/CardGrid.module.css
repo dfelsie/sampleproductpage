@@ -1,0 +1,25 @@
+div.gridCard {
+  height: 100px;
+  width: 250px;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: white 1px solid;
+  border-radius: 20px;
+}
+
+div.gridCard > p {
+  height: fit-content;
+}
+
+div.cardGridSec {
+  background: rgb(133, 178, 255);
+  background: linear-gradient(
+    180deg,
+    rgba(133, 178, 255, 1) 0%,
+    rgb(10, 101, 238) 100%
+  );
+  height: 600px;
+  color: white;
+}

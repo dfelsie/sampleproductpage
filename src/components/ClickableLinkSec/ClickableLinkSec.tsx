@@ -16,6 +16,7 @@ export default function ClickableLinkSec({}: Props) {
   return (
     <Flex flexDir={"column"} className={sharedStyles.basicSec}>
       <h4 className={sharedStyles.smallTopText}>Small Top Message</h4>
+      <Box>Big Grid Here</Box>
     </Flex>
   );
 }

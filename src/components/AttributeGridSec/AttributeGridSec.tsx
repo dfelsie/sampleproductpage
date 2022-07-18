@@ -13,6 +13,7 @@ import {
 type Props = {};
 import sharedStyles from "../Shared.module.css";
 import attributeStyles from "./AttributeGridSec.module.css";
+import AttributeGrid from "./AttributeGrid";
 export default function AttributeGridSec({}: Props) {
   return (
     <Flex className={sharedStyles.basicSec}>
@@ -24,7 +25,11 @@ export default function AttributeGridSec({}: Props) {
         </h3>
         <Button className={sharedStyles.secButton}>Read More</Button>
       </Flex>
-      <Box>Put a smaller grid here</Box>
+      <Flex flexDir={"column"} textAlign={"left"}>
+        {" "}
+        <h4 className={sharedStyles.smallTopText}>Small Top Message</h4>
+        <AttributeGrid />
+      </Flex>
     </Flex>
   );
 }
