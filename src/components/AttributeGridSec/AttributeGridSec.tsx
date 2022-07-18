@@ -21,7 +21,8 @@ export default function AttributeGridSec({}: Props) {
         <h4 className={sharedStyles.smallTopText}>Small Top Message</h4>
         <h2 className={sharedStyles.medMidText}>Product Statement</h2>
         <h3 className={sharedStyles.prodBodyText}>
-          Describe the above statement. Isn't it great?
+          Describe the above statement. We really love our product. We think you
+          will too.
         </h3>
         <Button className={sharedStyles.secButton}>Read More</Button>
       </Flex>

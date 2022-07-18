@@ -13,11 +13,14 @@ import {
 type Props = {
   cardText: string;
 };
-import cardGridStyles from "./AttributeGrid.module.css";
+import attrGridStyles from "./AttributeGrid.module.css";
 export default function AttibuteGridCard({ cardText }: Props) {
   return (
-    <Box className={cardGridStyles.attributeCard}>
-      <p>{cardText}</p>
+    <Box className={attrGridStyles.attributeCard}>
+      <p className={attrGridStyles.attributeCardHeader}>{cardText}</p>
+      <p className={attrGridStyles.attributeCardBody}>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      </p>
     </Box>
   );
 }
