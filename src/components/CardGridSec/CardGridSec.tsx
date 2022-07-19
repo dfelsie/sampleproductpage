@@ -17,7 +17,7 @@ import CardGrid from "./CardGrid";
 export default function CardGridSec({}: Props) {
   return (
     <Flex className={sharedStyles.basicSec + " " + cardGridStyles.cardGridSec}>
-      <Flex flexDir={"column"}>
+      <div className={sharedStyles.prodTextCol}>
         <h4 className={sharedStyles.smallTopText}>Small Top Message</h4>
         <h2 className={sharedStyles.medMidText}>Product Statement</h2>
         <h3 className={sharedStyles.prodBodyText}>
@@ -25,7 +25,7 @@ export default function CardGridSec({}: Props) {
           will too.
         </h3>
         <Button className={sharedStyles.secButton}>Read More</Button>
-      </Flex>
+      </div>
       <CardGrid />
     </Flex>
   );

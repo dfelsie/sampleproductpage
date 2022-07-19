@@ -10,3 +10,7 @@
 .attributeCardBody {
   font-family: "Inter", "monospace";
 }
+
+div#attributeSec {
+  height: 500px;
+}

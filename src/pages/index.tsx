@@ -22,6 +22,9 @@ import AttributeGridSec from "../components/AttributeGridSec/AttributeGridSec";
 import ClickableLinkSec from "../components/ClickableLinkSec/ClickableLinkSec";
 import SponsorRowSec from "../components/SponsorRowSec/SponsorRowSec";
 import Footer from "../components/Footer/Footer";
+import CarouselSec from "../components/CarouselSec/CarouselSec";
+import Carousel from "../components/CarouselSec/Carousel";
+import MyFirstCarousel from "../components/Carousel/MyFirstCarousel";
 
 const Index = () => (
   <Flex minH={"100vh"} flexDir={"column"} position={"relative"}>
@@ -30,9 +33,6 @@ const Index = () => (
     <CardGridSec />
     <AttributeGridSec />
     <ClickableLinkSec />
-    <Box>Potential Carousel?</Box>
-    {/*     <SponsorRowSec />
-     */}{" "}
     <Footer></Footer>
   </Flex>
 );

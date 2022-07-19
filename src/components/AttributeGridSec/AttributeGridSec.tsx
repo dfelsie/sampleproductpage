@@ -12,11 +12,14 @@ import {
 
 type Props = {};
 import sharedStyles from "../Shared.module.css";
-import attributeStyles from "./AttributeGridSec.module.css";
+import attributeStyles from "./AttributeGrid.module.css";
 import AttributeGrid from "./AttributeGrid";
 export default function AttributeGridSec({}: Props) {
   return (
-    <Flex className={sharedStyles.basicSec}>
+    <Flex
+      className={sharedStyles.basicSec}
+      id={attributeStyles.AttributeGridSec}
+    >
       <Flex flexDir={"column"}>
         <h4 className={sharedStyles.smallTopText}>Small Top Message</h4>
         <h2 className={sharedStyles.medMidText}>Product Statement</h2>

@@ -1,0 +1,24 @@
+div#linkGridSec {
+  height: 650px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+div#linkGridSec > h4 {
+  margin-bottom: 25px;
+}
+
+.linkGridCard {
+  height: 150px;
+  width: 650px;
+  display: flex;
+  position: relative;
+}
+
+.linkGridCardTextCol {
+  display: flex;
+  flex-direction: column;
+  width: 66%;
+  padding-left: 5%;
+  padding-right: 5%;
+}

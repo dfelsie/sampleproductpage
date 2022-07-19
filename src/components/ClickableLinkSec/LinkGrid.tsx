@@ -21,7 +21,7 @@ const txtAry = [
 ];
 export default function LinkGrid({}: Props) {
   return (
-    <SimpleGrid columns={2}>
+    <SimpleGrid columns={2} spacing={"20px"}>
       {txtAry.map((val, i) => (
         <LinkGridCard linkHeadText={val} key={`LinkGridCardNo${i}`} />
       ))}

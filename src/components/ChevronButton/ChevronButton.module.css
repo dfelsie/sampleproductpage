@@ -1,0 +1,53 @@
+#roundButton{
+    height:50px;
+    width: 70px;
+    background-color: #262626;
+    border-radius: 50%;
+    margin-top: 10px;
+    font-weight: lighter;
+    position: relative;
+    color: whitesmoke;
+
+
+    
+}
+
+#roundButton::after{
+    content: '';
+    position: absolute;
+    left:0;
+    border-radius: 50%;
+    height: 100%;
+    width: 0;
+    /* transition: all 1s;*/
+} 
+
+#roundButton:hover::after{
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, #660e01,#fe3514,#ffe104); 
+    
+    
+
+}
+
+/* #roundButton:hover{
+ /*background: linear-gradient(to right, #660e01,#fe3514,#ffe104); 
+/* background: linear-gradient(#e66465, #9198e5);
+ 
+} */
+
+#chevronSymbol{
+    transition: ease-in-out .2s;
+    font-weight: lighter;
+    z-index: 3;
+    
+    }
+    
+    #chevronSymbolRotated{
+    rotate: -90deg;
+    transition: ease-in-out .2s;
+    z-index: 3;
+
+    
+    }

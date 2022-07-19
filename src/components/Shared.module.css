@@ -41,18 +41,28 @@ div.basicSec {
   font-size: 0.875rem;
   font-weight: 700;
   font-family: "Inter", "monospace";
+  margin-bottom: 10px;
 }
 
 .medMidText {
   font-size: 2.25rem;
   font-weight: 700;
   font-family: "Ubuntu", "monospace";
+  margin-bottom: 10px;
 }
 
 .prodBodyText {
   font-size: 1.25rem;
   font-weight: 400;
   font-family: "Inter", "monospace";
+  margin-bottom: 25px;
+}
+
+.prodTextCol {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 button.secButton {
@@ -60,4 +70,26 @@ button.secButton {
   height: 50px;
   width: 120px;
   font-family: "Inter", "monospace";
+}
+
+.nextImage {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.nextImageContainer {
+  height: 150px;
+  width: 150px;
+  position: relative;
+}
+
+a.purpleHover {
+  transition: ease-in-out 0.1s;
+}
+
+a.purpleHover:hover {
+  color: purple;
 }

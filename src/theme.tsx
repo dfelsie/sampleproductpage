@@ -11,6 +11,20 @@ const breakpoints = createBreakpoints({
 });
 
 const theme = extendTheme({
+  components: {
+    Button: {
+      variants: {
+        base: {
+          _hover: {
+            background: "",
+          },
+        },
+      },
+      defaultProps: {
+        variant: "base",
+      },
+    },
+  },
   semanticTokens: {
     colors: {
       text: {
