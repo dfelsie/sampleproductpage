@@ -16,7 +16,7 @@
 }
 
 button.sectionButton {
-  border-radius: 5px;
+  border-radius: 10px;
   height: 50px;
   width: 150px;
   background-color: whitesmoke;
@@ -41,7 +41,6 @@ div.basicSec {
   font-size: 0.875rem;
   font-weight: 700;
   font-family: "Inter", "monospace";
-  margin-bottom: 10px;
 }
 
 .medMidText {

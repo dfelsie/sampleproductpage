@@ -17,10 +17,15 @@ import attrGridStyles from "./AttributeGrid.module.css";
 export default function AttibuteGridCard({ cardText }: Props) {
   return (
     <Box className={attrGridStyles.attributeCard}>
-      <p className={attrGridStyles.attributeCardHeader}>{cardText}</p>
-      <p className={attrGridStyles.attributeCardBody}>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-      </p>
+      <Flex>
+        <div className={attrGridStyles.topLeftCheck}>&#10003;</div>
+        <Box>
+          <p className={attrGridStyles.attributeCardHeader}>{cardText}</p>
+          <p className={attrGridStyles.attributeCardBody}>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          </p>
+        </Box>
+      </Flex>
     </Box>
   );
 }

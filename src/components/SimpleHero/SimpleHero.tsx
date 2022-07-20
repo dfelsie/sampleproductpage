@@ -11,6 +11,7 @@ import {
 } from "@chakra-ui/react";
 import styles from "./SimpleHero.module.css";
 import sharedStyles from "../Shared.module.css";
+import Image from "next/image";
 
 type Props = {};
 export default function SimpleHero({}: Props) {
@@ -24,15 +25,13 @@ export default function SimpleHero({}: Props) {
           What to do with the product.
           <br /> We think it's cool!
         </p>
-        <Button
-          className={
-            sharedStyles.sectionButton + " " + sharedStyles.sectionButton
-          }
-        >
-          Try The Product!
-        </Button>
+        <Button className={sharedStyles.sectionButton}
+        id={styles.heroButton}
+        >Try The Product!</Button>
       </Flex>
-      <Box h={"fit-content"}>Cool Image Here</Box>
+      <div id={styles.heroImageCont}>
+        <Image src="/assets/images/standsome.jpg" layout={"fill"} />
+      </div>
     </Flex>
   );
 }

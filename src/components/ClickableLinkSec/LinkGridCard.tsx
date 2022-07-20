@@ -21,7 +21,7 @@ export default function LinkGridCard({ linkHeadText }: Props) {
     <div className={linkGridStyles.linkGridCard}>
       <div className={sharedStyles.nextImageContainer}>
         <Image
-          className={sharedStyles.nextImage}
+          className={sharedStyles.nextImage + " " + linkGridStyles.gridCardImg}
           layout={"fill"}
           src="/assets/images/kobu.jpg"
         />
@@ -33,6 +33,7 @@ export default function LinkGridCard({ linkHeadText }: Props) {
           deserunt, expedita veritatis neque sint voluptate!{" "}
         </p>
       </div>
+      <div className={linkGridStyles.gridCardArrow}>&#8594;</div>
     </div>
   );
 }

@@ -17,8 +17,16 @@ import linkGridStyles from "./LinkGrid.module.css";
 export default function ClickableLinkSec({}: Props) {
   return (
     <Box className={sharedStyles.basicSec} id={linkGridStyles.linkGridSec}>
-      <h4 className={sharedStyles.smallTopText}>Small Top Message</h4>
-      <LinkGrid />
+      <Flex flexDir={"column"}>
+        <h4
+          className={
+            sharedStyles.smallTopText + " " + linkGridStyles.smallTopText
+          }
+        >
+          Small Top Message
+        </h4>
+        <LinkGrid />
+      </Flex>
     </Box>
   );
 }

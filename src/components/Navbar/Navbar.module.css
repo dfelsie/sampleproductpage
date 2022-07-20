@@ -34,9 +34,20 @@
 
 Button.navbarTransparentButton {
   background-color: transparent;
-  border: 1px solid white;
+  border: 1px solid lightgray;
+  transition: 0.1s linear;
+}
+
+Button.navbarTransparentButton:hover {
+  background-color: lightgray;
+  color: darkmagenta;
 }
 
 Button.navbarColoredButton {
+  background-color: darkmagenta;
+  transition: 0.1s linear;
+}
+
+Button.navbarColoredButton:hover {
   background-color: purple;
 }

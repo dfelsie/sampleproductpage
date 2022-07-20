@@ -8,3 +8,16 @@
   );
   color: white;
 }
+
+#heroImageCont {
+  height: 600px;
+  width: 600px;
+  position: relative;
+}
+
+#heroButton {
+  transition: 0.1s linear;
+}
+#heroButton:hover {
+  background-color: lightgray;
+}

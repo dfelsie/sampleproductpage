@@ -5,8 +5,17 @@ div.gridCard {
   display: flex;
   justify-content: center;
   align-items: center;
-  border: white 1px solid;
+  border: whitesmoke 1px solid;
   border-radius: 20px;
+  color: whitesmoke;
+  background-color: #5e9af9;
+  transition: linear 0.1s;
+}
+
+div.gridCard:hover {
+  border: #fff 1px solid;
+  background-color: #74a8fc;
+  color: white;
 }
 
 div.gridCard > p {
@@ -22,4 +31,18 @@ div.cardGridSec {
   );
   height: 600px;
   color: white;
+}
+
+#cardGridButton {
+  border: lightgray solid 1px;
+  transition: 0.1s linear;
+}
+
+#cardGridButton:hover {
+  background-color: lightgray;
+  color: darkmagenta;
+}
+
+.smallTopText {
+  color: orange;
 }

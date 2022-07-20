@@ -18,20 +18,37 @@ export default function AttributeGridSec({}: Props) {
   return (
     <Flex
       className={sharedStyles.basicSec}
-      id={attributeStyles.AttributeGridSec}
+      id={attributeStyles.attributeGridSec}
     >
-      <Flex flexDir={"column"}>
-        <h4 className={sharedStyles.smallTopText}>Small Top Message</h4>
+      <div className={sharedStyles.prodTextCol + " " + attributeStyles.col}>
+        <h4
+          className={
+            sharedStyles.smallTopText + " " + attributeStyles.smallTopText
+          }
+        >
+          Small Top Message
+        </h4>
         <h2 className={sharedStyles.medMidText}>Product Statement</h2>
         <h3 className={sharedStyles.prodBodyText}>
           Describe the above statement. We really love our product. We think you
           will too.
         </h3>
-        <Button className={sharedStyles.secButton}>Read More</Button>
-      </Flex>
-      <Flex flexDir={"column"} textAlign={"left"}>
+        <Button
+          className={sharedStyles.secButton}
+          id={attributeStyles.attrGridButt}
+        >
+          Read More
+        </Button>
+      </div>
+      <Flex flexDir={"column"} textAlign={"left"} h={"300px"}>
         {" "}
-        <h4 className={sharedStyles.smallTopText}>Small Top Message</h4>
+        <h4
+          className={
+            sharedStyles.smallTopText + " " + attributeStyles.smallTopText
+          }
+        >
+          Small Top Message
+        </h4>
         <AttributeGrid />
       </Flex>
     </Flex>

@@ -2,10 +2,13 @@ div#linkGridSec {
   height: 650px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
 }
 div#linkGridSec > h4 {
   margin-bottom: 25px;
+}
+
+.gridCardImg {
+  border-radius: 20px;
 }
 
 .linkGridCard {
@@ -13,6 +16,26 @@ div#linkGridSec > h4 {
   width: 650px;
   display: flex;
   position: relative;
+  transition: 0.2s linear;
+  border-radius: 20px;
+}
+
+.linkGridCard:hover {
+  scale: 0.9;
+  opacity: 0.5;
+}
+.linkGridCard:hover > .gridCardArrow {
+  left: 95%;
+  opacity: 1;
+}
+
+.gridCardArrow {
+  color: purple;
+  font-size: 42px;
+  position: absolute;
+  left: 85%;
+  transition: 0.2s linear;
+  opacity: 0;
 }
 
 .linkGridCardTextCol {
@@ -21,4 +44,8 @@ div#linkGridSec > h4 {
   width: 66%;
   padding-left: 5%;
   padding-right: 5%;
+}
+
+.smallTopText {
+  color: purple;
 }
