@@ -27,7 +27,13 @@ import Carousel from "../components/CarouselSec/Carousel";
 import MyFirstCarousel from "../components/Carousel/MyFirstCarousel";
 
 const Index = () => (
-  <Flex minH={"100vh"} flexDir={"column"} position={"relative"}>
+  <Flex
+    minH={"100vh"}
+    flexDir={"column"}
+    position={"relative"}
+    w={"100%"}
+    overflowX={"hidden"}
+  >
     <Navbar />
     <SimpleHero />
     <CardGridSec />

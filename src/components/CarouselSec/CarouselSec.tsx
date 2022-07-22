@@ -16,8 +16,8 @@ import carouselStyles from "./Carousel.module.css";
 
 export default function CarouselSec({}: Props) {
   return (
-    <Flex className={sharedStyles.basicSec} id={carouselStyles.carouselSec}>
+    <div className={sharedStyles.basicSec} id={carouselStyles.carouselSec}>
       Carousel
-    </Flex>
+    </div>
   );
 }

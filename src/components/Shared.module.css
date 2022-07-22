@@ -29,6 +29,18 @@ div.basicSec {
   width: 100%;
   padding-left: 5%;
   padding-right: 5%;
+  display: flex;
+}
+
+@media only screen and (max-width: 600px) {
+  div.basicSec {
+    flex-direction: column;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    padding-left: 0%;
+    padding-right: 0%;
+    width: 90%;
+  }
 }
 
 .basicSec > * {

@@ -16,7 +16,7 @@ import attributeStyles from "./AttributeGrid.module.css";
 import AttributeGrid from "./AttributeGrid";
 export default function AttributeGridSec({}: Props) {
   return (
-    <Flex
+    <div
       className={sharedStyles.basicSec}
       id={attributeStyles.attributeGridSec}
     >
@@ -51,6 +51,6 @@ export default function AttributeGridSec({}: Props) {
         </h4>
         <AttributeGrid />
       </Flex>
-    </Flex>
+    </div>
   );
 }

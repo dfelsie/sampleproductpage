@@ -16,7 +16,7 @@ import cardGridStyles from "./CardGrid.module.css";
 import CardGrid from "./CardGrid";
 export default function CardGridSec({}: Props) {
   return (
-    <Flex className={sharedStyles.basicSec + " " + cardGridStyles.cardGridSec}>
+    <div className={sharedStyles.basicSec + " " + cardGridStyles.cardGridSec}>
       <div className={sharedStyles.prodTextCol}>
         <h4
           className={
@@ -38,6 +38,6 @@ export default function CardGridSec({}: Props) {
         </Button>
       </div>
       <CardGrid />
-    </Flex>
+    </div>
   );
 }

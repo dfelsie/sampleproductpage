@@ -16,7 +16,7 @@ import Image from "next/image";
 type Props = {};
 export default function SimpleHero({}: Props) {
   return (
-    <Flex id={styles.simpleHeroSec} className={sharedStyles.basicSec}>
+    <div id={styles.simpleHeroSec} className={sharedStyles.basicSec}>
       <Flex flexDir={"column"} h={"fit-content"}>
         <h1 className={sharedStyles.prodHead}>
           <span>Our Great Product</span> <br /> Solves Your Problems
@@ -25,13 +25,13 @@ export default function SimpleHero({}: Props) {
           What to do with the product.
           <br /> We think it's cool!
         </p>
-        <Button className={sharedStyles.sectionButton}
-        id={styles.heroButton}
-        >Try The Product!</Button>
+        <Button className={sharedStyles.sectionButton} id={styles.heroButton}>
+          Try The Product!
+        </Button>
       </Flex>
       <div id={styles.heroImageCont}>
         <Image src="/assets/images/standsome.jpg" layout={"fill"} />
       </div>
-    </Flex>
+    </div>
   );
 }
