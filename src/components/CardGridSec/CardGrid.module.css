@@ -1,6 +1,6 @@
 div.gridCard {
   height: 100px;
-  width: 250px;
+  width: 18vw;
   font-size: 1.5rem;
   display: flex;
   justify-content: center;
@@ -20,6 +20,7 @@ div.gridCard:hover {
 
 div.gridCard > p {
   height: fit-content;
+  text-align: center;
 }
 
 div.cardGridSec {
@@ -45,4 +46,21 @@ div.cardGridSec {
 
 .smallTopText {
   color: orange;
+}
+
+@media only screen and (max-width: 768px) {
+  div.cardGridSec {
+    height: 900px;
+  }
+  div.gridCard {
+    width: 225px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  div.cardGridSec {
+    height: 1050px;
+  }
+  div.gridCard {
+    width: 150px;
+  }
 }

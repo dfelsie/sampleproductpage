@@ -20,7 +20,11 @@ type Props = {
 export default function FooterCol({ headerText, textList }: Props) {
   return (
     <Flex flexDir={"column"}>
-      <h4 className={sharedStyles.smallTopText}>{headerText}</h4>
+      <h4
+        className={sharedStyles.smallTopText + " " + footerStyles.smallTopText}
+      >
+        {headerText}
+      </h4>
 
       <List>
         {textList.map((val, i) => (

@@ -28,3 +28,15 @@
   margin: auto;
   color: #989aaf;
 }
+
+@media only screen and (max-width: 768px) {
+}
+@media only screen and (max-width: 480px) {
+  .smallTopText {
+    font-size: 0.8rem;
+  }
+  .colItem {
+    font-size: 0.95rem;
+    text-align: center;
+  }
+}

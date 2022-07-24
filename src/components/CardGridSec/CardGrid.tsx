@@ -26,7 +26,12 @@ const sampleItems = [
 ];
 export default function CardGrid({}: Props) {
   return (
-    <SimpleGrid columns={3} spacing={"25px"} my={"auto"}>
+    <SimpleGrid
+      columns={[2, 2, 3, 3]}
+      spacing={"25px"}
+      my={"auto"}
+      mx={["auto", "auto", "0", "0"]}
+    >
       {sampleItems.map((val, i) => (
         <CardGridCard cardText={val} key={`cardNum${i}`} />
       ))}

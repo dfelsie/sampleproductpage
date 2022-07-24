@@ -32,38 +32,9 @@ div.basicSec {
   display: flex;
 }
 
-/* Three sizes: 480,768, default */
-@media only screen and (max-width: 480) {
-  div.basicSec {
-    flex-direction: column;
-    padding-top: 5%;
-    padding-bottom: 5%;
-    padding-left: 0%;
-    padding-right: 0%;
-    width: 100%;
-  }
-  button.sectionButton {
-    margin-bottom: 20px;
-  }
-  .prodHead {
-    width: min-content;
-  }
-}
-@media only screen and (max-width: 768) {
-  div.basicSec {
-    flex-direction: column;
-    padding-top: 5%;
-    padding-bottom: 5%;
-    padding-left: 0%;
-    padding-right: 0%;
-    width: 100%;
-  }
-  button.sectionButton {
-    margin-bottom: 20px;
-  }
-  .prodHead {
-    width: min-content;
-  }
+.heroText {
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 .basicSec > * {
@@ -115,8 +86,8 @@ button.secButton {
 }
 
 .nextImageContainer {
-  height: 150px;
-  width: 150px;
+  height: 50%;
+  width: 50%;
   position: relative;
 }
 
@@ -126,4 +97,89 @@ a.purpleHover {
 
 a.purpleHover:hover {
   color: purple;
+}
+
+/* Three sizes: 480,768, default */
+@media only screen and (max-width: 480px) {
+  div.basicSec {
+    display: flex;
+    flex-direction: column;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    padding-left: 0%;
+    padding-right: 0%;
+    width: 100%;
+  }
+  button.sectionButton {
+    margin: auto !important;
+
+    margin-bottom: 20px;
+  }
+  .prodHead {
+    font-size: 2.25rem;
+  }
+  .heroText {
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+  .bodyText {
+    font-size: 1.1rem;
+  }
+  .prodTextCol {
+    margin-right: auto;
+    margin-left: auto;
+    width: 80%;
+    text-align: center;
+  }
+  button.secButton {
+    border-radius: 0.5rem;
+    height: 50px;
+    width: 120px;
+    font-family: "Inter", "monospace";
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 10px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  div.basicSec {
+    display: flex;
+    flex-direction: column !important;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    padding-left: 0%;
+    padding-right: 0%;
+    width: 100%;
+  }
+  button.sectionButton {
+    margin: auto !important;
+    margin-bottom: 20px;
+  }
+
+  .heroText {
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+  .nextImageContainer {
+    height: 150px;
+    width: 150px;
+    position: relative;
+  }
+  .prodTextCol {
+    margin-right: auto;
+    margin-left: auto;
+    width: 80%;
+    text-align: center;
+  }
+  button.secButton {
+    border-radius: 0.5rem;
+    height: 50px;
+    width: 120px;
+    font-family: "Inter", "monospace";
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 10px;
+  }
 }

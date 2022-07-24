@@ -47,3 +47,51 @@ div#attributeGridSec {
 .smallTopText {
   color: purple;
 }
+
+@media only screen and (max-width: 768px) {
+  div#attributeGridSec {
+    height: 850px;
+    justify-content: inherit;
+  }
+  div#attributeGridSec > * {
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+  .smallTopText {
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .attributeCard {
+    width: 350px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+  }
+  .topLeftCheck {
+    display: none;
+  }
+}
+@media only screen and (max-width: 480px) {
+  div#attributeGridSec {
+    height: 850px;
+    justify-content: inherit;
+  }
+  div#attributeGridSec > * {
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+  .smallTopText {
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .attributeCard {
+    width: 250px;
+
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+  }
+  .topLeftCheck {
+    display: none;
+  }
+}
