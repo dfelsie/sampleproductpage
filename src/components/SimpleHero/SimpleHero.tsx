@@ -17,7 +17,11 @@ type Props = {};
 export default function SimpleHero({}: Props) {
   return (
     <div id={styles.simpleHeroSec} className={sharedStyles.basicSec}>
-      <Flex flexDir={"column"} h={"fit-content"}>
+      <Flex
+        flexDir={"column"}
+        h={"fit-content"}
+        mx={["auto", "auto", "0", "0"]}
+      >
         <h1 className={sharedStyles.prodHead}>
           <span>Our Great Product</span> <br /> Solves Your Problems
         </h1>
