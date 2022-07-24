@@ -5,7 +5,6 @@
   font-family: "Ubuntu", "monospace";
   font-weight: 900;
   font-size: 3rem;
-  width: min-content;
 }
 
 .bodyText {
@@ -44,6 +43,9 @@ div.basicSec {
   }
   button.sectionButton {
     margin-bottom: 20px;
+  }
+  .prodHead {
+    width: min-content;
   }
 }
 
