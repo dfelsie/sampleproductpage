@@ -32,7 +32,24 @@ div.basicSec {
   display: flex;
 }
 
-@media only screen and (max-width: 600px) {
+/* Three sizes: 480,768, default */
+@media only screen and (max-width: 480) {
+  div.basicSec {
+    flex-direction: column;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    padding-left: 0%;
+    padding-right: 0%;
+    width: 100%;
+  }
+  button.sectionButton {
+    margin-bottom: 20px;
+  }
+  .prodHead {
+    width: min-content;
+  }
+}
+@media only screen and (max-width: 768) {
   div.basicSec {
     flex-direction: column;
     padding-top: 5%;
