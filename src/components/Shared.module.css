@@ -183,3 +183,11 @@ a.purpleHover:hover {
     margin-bottom: 10px;
   }
 }
+
+.purpleHoverText {
+  transition: ease-in-out 0.1s;
+}
+
+.purpleHoverText:hover {
+  color: purple;
+}

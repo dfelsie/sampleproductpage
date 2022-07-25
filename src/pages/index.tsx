@@ -22,10 +22,8 @@ import AttributeGridSec from "../components/AttributeGridSec/AttributeGridSec";
 import ClickableLinkSec from "../components/ClickableLinkSec/ClickableLinkSec";
 import SponsorRowSec from "../components/SponsorRowSec/SponsorRowSec";
 import Footer from "../components/Footer/Footer";
-import CarouselSec from "../components/CarouselSec/CarouselSec";
-import Carousel from "../components/CarouselSec/Carousel";
-import MyFirstCarousel from "../components/Carousel/MyFirstCarousel";
-
+import NavModal from "../components/Modal/NavModal";
+import useWindowDimensions from "../useWindowDimensions";
 const Index = () => (
   <Flex
     minH={"100vh"}

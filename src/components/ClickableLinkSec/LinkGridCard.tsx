@@ -19,7 +19,11 @@ import linkGridStyles from "./LinkGrid.module.css";
 export default function LinkGridCard({ linkHeadText }: Props) {
   return (
     <div className={linkGridStyles.linkGridCard}>
-      <div className={sharedStyles.nextImageContainer}>
+      <div
+        className={
+          sharedStyles.nextImageContainer + " " + linkGridStyles.gridCardImgCont
+        }
+      >
         <Image
           className={sharedStyles.nextImage + " " + linkGridStyles.gridCardImg}
           layout={"fill"}
